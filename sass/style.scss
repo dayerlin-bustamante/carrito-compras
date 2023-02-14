@@ -1,0 +1,14 @@
+@import '_variants.scss';
+@import '_header.scss';
+@import '_barra.scss';
+@import '_hero.scss';
+@import '_cards.scss';
+@import '_footer.scss';
+
+.button {
+    color: $white-color;
+    background-color: $primary-color;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 50px;
+}

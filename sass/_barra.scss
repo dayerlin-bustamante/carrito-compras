@@ -1,0 +1,43 @@
+@import '_variants.scss';
+
+.barra {
+    padding: 20px 0;
+    background: #741d51; /* Old browsers */
+    background: -moz-linear-gradient(left, #741d51 0%, #9b4ee4 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #741d51 0%,#9b4ee4 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #741d51 0%,#9b4ee4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#741d51', endColorstr='#9b4ee4',GradientType=1 ); /* IE6-9 */
+
+    .barra-items{
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin-left: 2rem;
+            img {
+                width: 30px;
+            }
+            p {
+                margin-left: 1rem;
+                margin-bottom: 0;
+                color: $white-color;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .barra {
+        .barra-items{
+            div{
+                margin-left: 0;
+                justify-content: center;
+                p {
+                    margin-left: 2rem;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

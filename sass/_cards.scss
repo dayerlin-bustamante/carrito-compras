@@ -1,0 +1,29 @@
+@import '_variants.scss';
+
+#box-cards{
+    margin: 5rem 0 7rem 0;
+    row-gap: 3rem;
+    .card {
+        margin-top: 1rem;
+        box-shadow: $shadow-01;
+        border: none;
+        &:hover{
+            border: 1px solid $grey-02-color;
+        }
+        a{
+            color: white;
+            float: right;
+            background: blue;
+            text-decoration: none;
+            border-radius: 100%;
+            font-size: 24px;
+            padding: 1px 12px 3px;
+        }
+        .card-title{
+            font-weight: bold;
+        }
+        .card-precio{
+            font-weight: bold;
+        }
+    }
+}

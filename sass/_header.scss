@@ -1,0 +1,131 @@
+@import '_variants.scss';
+
+header {
+    box-shadow: $shadow-01;
+    padding: 10px 0;
+    background: $white-color;
+    text-align: center;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+    .sub-pages{
+        display: none;  
+    }
+    .logos{
+        text-align: left;
+        padding-left: 30px;
+        #logo {
+            display: none;
+        }
+        #isotipo{
+            width: 40px;
+        }
+    }
+    .submenu {
+        text-align: right;
+        padding-right: 30px;
+        position: relative;
+        #carrito{
+            display: none;
+
+            #vaciar-carrito{
+                margin-top: 6rem;
+            }
+        }
+        &:hover #carrito{
+            display: block;
+            position: absolute;
+            right:0;
+        
+            top:100%;
+            z-index: 1;
+            background-color: white;
+            padding: 20px;
+            min-height: 400px;
+            min-width: 300px;
+        }
+        .vacio {
+            padding: 10px;
+            background-color: crimson;
+            text-align: center;
+            border-radius: 10px;
+            color: white;
+        }
+        .borrar-clothes {
+            background-color: red;
+            border-radius: 50%;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        #img-carrito {
+            width: 35px;
+        }
+        table {
+            margin-bottom: 1.5rem;
+            thead {
+                tr {
+                    th {
+                        padding: 1rem 0.5rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    text-align: center;
+                   td:first-child {
+                        padding-bottom: 1rem;
+                   }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    header {
+        padding: 20px 0;
+        .sub-pages{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul {
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+                li {
+                    a{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        .submenu {
+            #img-carrito {
+                width: 40px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px){
+    header {
+        .logos{
+            #logo {
+                display: block;
+            }
+            #isotipo {
+                display: none;
+            }
+        }
+    }
+}

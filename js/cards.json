@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Camiseta",
+        "description": "Sudadera con capucha",
+        "img": "./img/b.png",
+        "starts": "./img/group-starts.svg",
+        "precio": "48€",
+        "id": "0",
+        "cantidad": 1
+    },
+    {
+        "title": "Camiseta",
+        "description": "Sudadera con capucha",
+        "img": "./img/a.png",
+        "starts": "./img/group-starts.svg",
+        "precio": "48€",
+        "id": "1",
+        "cantidad": 1
+    },
+    {
+        "title": "Camisa",
+        "description": "Sudadera con capucha",
+        "img": "./img/c.png",
+        "starts": "./img/group-starts.svg",
+        "precio": "48€",
+        "id": "2",
+        "cantidad": 1
+    },
+    {
+        "title": "Sudadera",
+        "description": "Sudadera con capucha",
+        "img": "./img/d.png",
+        "starts": "./img/group-starts.svg",
+        "precio": "48€",
+        "id": "3",
+        "cantidad": 1
+    },
+    {
+        "title": "Camisa",
+        "description": "Sudadera con capucha",
+        "img": "./img/e.png",
+        "starts": "./img/group-starts.svg",
+        "precio": "48€",
+        "id": "4",
+        "cantidad": 1
+    },
+    {
+        "title": "Pantalon",
+        "description": "Sudadera con capucha",
+        "img": "./img/f.png",
+        "starts": "./img/group-starts.svg",
+        "precio": "48€",
+        "id": "5",
+        "cantidad": 1
+    },
+    {
+        "title": "Pantalon jeans",
+        "description": "Sudadera con capucha",
+        "img": "./img/g.png",
+        "starts": "./img/group-starts.svg",
+        "precio": "48€",
+        "id": "6",
+        "cantidad": 1
+    },
+    {
+        "title": "Pantalon jeans",
+        "description": "Sudadera con capucha",
+        "img": "./img/h.png",
+        "starts": "./img/group-starts.svg",
+        "precio": "48€",
+        "id": "7",
+        "cantidad": 1
+    }
+]

@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto&display=swap");
+header {
+  box-shadow: 0px 30px 60px rgba(213, 213, 213, 0.25);
+  padding: 10px 0;
+  background: white;
+  text-align: center;
+}
+header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header a {
+  text-decoration: none;
+}
+header .sub-pages {
+  display: none;
+}
+header .logos {
+  text-align: left;
+  padding-left: 30px;
+}
+header .logos #logo {
+  display: none;
+}
+header .logos #isotipo {
+  width: 40px;
+}
+header .submenu {
+  text-align: right;
+  padding-right: 30px;
+  position: relative;
+}
+header .submenu #carrito {
+  display: none;
+}
+header .submenu #carrito #vaciar-carrito {
+  margin-top: 6rem;
+}
+header .submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+}
+header .submenu .vacio {
+  padding: 10px;
+  background-color: crimson;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+header .submenu .borrar-clothes {
+  background-color: red;
+  border-radius: 50%;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+header .submenu #img-carrito {
+  width: 35px;
+}
+header .submenu table {
+  margin-bottom: 1.5rem;
+}
+header .submenu table thead tr th {
+  padding: 1rem 0.5rem;
+  font-weight: 400;
+}
+header .submenu table tbody tr {
+  text-align: center;
+}
+header .submenu table tbody tr td:first-child {
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 20px 0;
+  }
+  header .sub-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .sub-pages ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  header .sub-pages ul li a {
+    color: #061826;
+  }
+  header .submenu #img-carrito {
+    width: 40px;
+  }
+}
+@media (min-width: 1000px) {
+  header .logos #logo {
+    display: block;
+  }
+  header .logos #isotipo {
+    display: none;
+  }
+}
+.barra {
+  padding: 20px 0;
+  background: #741d51; /* Old browsers */
+  background: -moz-linear-gradient(left, #741d51 0%, #9b4ee4 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #741d51 0%, #9b4ee4 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #741d51 0%, #9b4ee4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#741d51", endColorstr="#9b4ee4",GradientType=1 ); /* IE6-9 */
+}
+.barra .barra-items div {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-left: 2rem;
+}
+.barra .barra-items div img {
+  width: 30px;
+}
+.barra .barra-items div p {
+  margin-left: 1rem;
+  margin-bottom: 0;
+  color: white;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .barra .barra-items div {
+    margin-left: 0;
+    justify-content: center;
+  }
+  .barra .barra-items div p {
+    margin-left: 2rem;
+    font-size: 18px;
+  }
+}
+.contenido-hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+.contenido-hero h2 {
+  font-family: "Francois One", sans-serif;
+  font-size: 48px;
+}
+.contenido-hero p {
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+.contenido-hero form {
+  gap: 2rem;
+}
+.contenido-hero form #submit-buscador {
+  color: white;
+  background-color: #061826;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 50px;
+}
+.contenido-hero form #buscador {
+  border: 1px solid #E6E8E6;
+  border-radius: 50px;
+  padding: 0.5rem 2rem;
+  margin-right: 2rem;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contenido-hero h2 {
+    font-size: 64px;
+  }
+  .contenido-hero p {
+    font-size: 20px;
+  }
+}
+#box-cards {
+  margin: 5rem 0 7rem 0;
+  row-gap: 3rem;
+}
+#box-cards .card {
+  margin-top: 1rem;
+  box-shadow: 0px 30px 60px rgba(213, 213, 213, 0.25);
+  border: none;
+}
+#box-cards .card:hover {
+  border: 1px solid #E6E8E6;
+}
+#box-cards .card a {
+  color: white;
+  float: right;
+  background: blue;
+  text-decoration: none;
+  border-radius: 100%;
+  font-size: 24px;
+  padding: 1px 12px 3px;
+}
+#box-cards .card .card-title {
+  font-weight: bold;
+}
+#box-cards .card .card-precio {
+  font-weight: bold;
+}
+
+.site-footer {
+  background-color: #061826;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+
+.site-footer hr.small {
+  margin: 20px 0;
+}
+
+.site-footer h6 {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.site-footer a {
+  color: #737373;
+}
+
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  display: block;
+}
+
+.footer-links a {
+  color: #737373;
+}
+
+.footer-links a:active, .footer-links a:focus, .footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.footer-links.inline li {
+  display: inline-block;
+}
+
+.site-footer .social-icons {
+  text-align: right;
+}
+
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+
+.copyright-text {
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .site-footer {
+    padding-bottom: 0;
+  }
+  .site-footer .copyright-text, .site-footer .social-icons {
+    text-align: center;
+  }
+}
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.social-icons li.title {
+  margin-right: 15px;
+  text-transform: uppercase;
+  color: #96a2b2;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.social-icons a:active, .social-icons a:focus, .social-icons a:hover {
+  color: white;
+  background-color: #29aafe;
+}
+
+.social-icons.size-sm a {
+  line-height: 34px;
+  height: 34px;
+  width: 34px;
+  font-size: 14px;
+}
+
+.social-icons a.facebook:hover {
+  background-color: #3b5998;
+}
+
+.social-icons a.twitter:hover {
+  background-color: #00aced;
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
+}
+
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
+}
+
+@media (max-width: 767px) {
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+}
+.button {
+  color: white;
+  background-color: #061826;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
