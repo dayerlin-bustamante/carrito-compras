@@ -32,6 +32,10 @@ onlisten();
 function onlisten() {
   cards.addEventListener("click", addClothes);
   carrito.addEventListener("click", removeClothes);
+  document.addEventListener('DOMContentLoaded', () => {
+    add_carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    paintCarritoElements();
+  })
   vaciasCarrito.addEventListener("click", () => {
     add_carrito = [];
     paintCarritoElements();
@@ -84,8 +88,11 @@ function paintCarritoElements() {
     `;
   });
   contenedorCarrito.innerHTML = fragmentCarrito;
+  sincStorage();
 }
-
+function sincStorage(){
+  localStorage.setItem('carrito', JSON.stringify(add_carrito));
+}
 //another way to clean html is:
 /* function cleanHtml(){
   /elemento que tiene html
